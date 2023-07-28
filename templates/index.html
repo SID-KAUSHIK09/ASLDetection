@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Writer</title>
+    <meta charset="utf-8">
+	<link rel="shortcut icon" type="image/png" href="/static/fav.png">
+	<style>
+		body {
+			background-image: url('static/back.jpg');
+			background-size: cover;
+			background-position: center;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.card {
+			background-color: white;
+			border-radius: 8px;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+			padding: 32px;
+			text-align: center;
+			width: 400px;
+			margin: 0px 16px;
+		}
+		.card h2 {
+			margin-top: 0px;
+		}
+		.card p {
+			margin-bottom: 16px;
+		}
+		.button {
+			background-color:darkred;
+			border: none;
+			color: white;
+			padding: 12px 24px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 16px;
+			cursor: pointer;
+			border-radius: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<h2>ASL</h2>
+			<p>Create a notepad file that saves text detected using American Sign Language.</p>
+			<form method="post" action="/asl">
+				<button name="asl" class="button" type="submit">Click</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
